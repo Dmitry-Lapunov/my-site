@@ -1,143 +1,471 @@
+/* Глобальные стили */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: yellow;
+  line-height: 1.6;
+  background-color: #212121;
+  color: #ffc107;
 }
 
-.header, .footer{
-  width: auto;
+/* Шапка и подвал */
+.header,
+.footer {
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  height: auto;
-  background-color: black;
-  color: yellow;
-  font-style: italic;
-  font-size: 22px;
+  padding: 20px 0;
+  background-color: #000;
+  color: #ffc107;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
 }
 
 header {
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
-.main {
-  text-align: center;
-  width: auto;
+/* Основное содержимое страницы */
+.content {
+  max-width: 1200px;
   margin: 0 auto;
-  height: auto;
-  color: black;
-  font-size: 22px;
+  padding: 0 20px;
 }
 
-ul li {
-  list-style: none;
-  color: inherit;
-}
-
-button {
-  width: 250px;
-  padding: 25px;
-  border: 1px;
-  border-radius: 15px;
-  background-color: black;
-  color: yellow;
-  font-size: 22px;
-}
-
-button:hover {
-  color: red;
-}
-
-nav ul {
+/* Меню навигации */
+.navigation ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
   list-style: none;
-
+  padding: 10px 0;
 }
 
-nav ul li a {
-  text-decoration: none; /* Убираем подчеркивание */
-  color: inherit; /* Делаем цвет текста таким же, как у обычного текста */
-  font-size: 22px; /* Размер шрифта */
-  font-family: Arial, sans-serif; /* Шрифт */
-  cursor: pointer;
+.navigation ul li a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-  color: rgb(255, 0, 0); /* Например, меняем цвет на красный при наведении */
+.navigation ul li a:hover {
+  color: #dc3545;
 }
 
-.mainHeader img {
-  width: 500px;
+/* Основной баннер */
+.hero {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.hero img {
+  width: 350px;
   height: auto;
+  margin: 0 auto;
+  display: block;
 }
 
-.aboutMe {
-  padding: 40px;
-  width: auto;
+/* Секция 'Обо мне' */
+.about-me {
+  padding: 40px 0;
+  text-align: center;
 }
 
-.myHistory {
+.about-me p {
+  color: #000;
+}
+
+.history {
+  margin-top: 35px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 150px;
-  padding-right: 150px;
-  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
 }
 
-.myHistory div {
-  width: 500px;
+.history div {
+  flex-basis: calc(50% - 60px);
+  padding: 20px;
+  background-color: #eaeaea;
+  border-radius: 10px;
 }
 
-.byMe {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
+/* Секция 'Мои навыки' */
+.skills {
+  padding: 40px 0;
+  text-align: center;
+  padding: 75px;
 }
 
-.byMe div {
-  width: 500px;
+.skill-list {
+  margin-bottom: 50px;
+}
+
+.skill-list p {
+  font-size: 24px;
+}
+
+.technologies, .technologies h3 {
+  margin-bottom: 35px;
+}
+
+.technologies h3 {
   font-size: 25px;
 }
 
-.skills div ul{
+.technologies ul {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  gap: 20px;
   list-style: none;
-  background-color: black;
-  color: yellow;
-  font-size: 30px;
   padding: 20px;
+  background-color: #212529;
+  color: #fff;
+  font-size: 20px;
 }
 
-.portfolio {
+.technologies ul li {
+  flex-grow: 1;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+
+.portfolio h2, .portfolio h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.portfolio p {
+  font-size: 22px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.project-title {
+  font-weight: 500;
+  color: #007bff;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.project {
+  flex: 0 1 30%;
+  max-width: 33%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.myWork {
-  margin-bottom: 20px; /* Добавляем отступ между таблицей и кнопкой */
+.project img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.project a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+  background-color: #0056b3;
 }
 
 button {
-  padding: 10px 20px;
-  margin-bottom: 50px;
+  margin-top: 25px;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: red;
+  color: #fff;
+  transition: background-color 0.3s ease;
 }
 
-.portfolio img {
-  width: 300px;
-  margin: 50px;
+button:hover {
+  background-color: #00fb21;
 }
 
-.footer p {
+/* Контакты */
+.contact {
+  padding: 40px 0;
   text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.contact input, .contact button {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact input {
+  width: 80%;
+  max-width: 400px;
+}
+
+/* Медиа-запросы для адаптации к разным экранам */
+@media (max-width: 479px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .content {
+    padding: 0 10px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 24px;
+  }
+
+  .projects {
+    flex-direction: column;
+  }
+
+  .project {
+    flex: 0 1 100%;
+    max-width: 100%;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navigation ul li a {
+    padding: 10px 0;
+  }
+
+  .skills {
+    padding: 20px 0;
+  }
+
+  .skill-list p {
+    font-size: 18px;
+  }
+
+  .technologies ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .technologies ul li {
+    flex-grow: 0;
+  }
+
+  .contact input {
+    width: 100%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  body {
+    font-size: 15px;
+  }
+
+  .content {
+    padding: 0 20px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero p {
+    font-size: 28px;
+  }
+
+  .projects {
+    flex-direction: row;
+  }
+
+  .project {
+    flex: 0 1 45%;
+    max-width: 45%;
+  }
+
+  .navigation ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .skills {
+    padding: 30px 0;
+  }
+
+  .skill-list p {
+    font-size: 20px;
+  }
+
+  .technologies ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .technologies ul li {
+    flex-grow: 1;
+  }
+
+  .contact input {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 16px;
+  }
+
+  .content {
+    padding: 0 30px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 30px;
+  }
+
+  .projects {
+    flex-direction: row;
+  }
+
+  .project {
+    flex: 0 1 31%;
+    max-width: 31%;
+  }
+
+  .navigation ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .skills {
+    padding: 40px 0;
+  }
+
+  .skill-list p {
+    font-size: 22px;
+  }
+
+  .technologies ul {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .technologies ul li {
+    flex-grow: 1;
+  }
+
+  .contact input {
+    width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 17px;
+  }
+
+  .content {
+    padding: 0 40px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .hero p {
+    font-size: 34px;
+  }
+
+  .projects {
+    flex-direction: row;
+  }
+
+  .project {
+    flex: 0 1 23%;
+    max-width: 23%;
+  }
+
+  .navigation ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .skills {
+    padding: 50px 0;
+  }
+
+  .skill-list p {
+    font-size: 26px;
+  }
+
+  .technologies ul {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .technologies ul li {
+    flex-grow: 1;
+  }
+
+  .contact input {
+    width: 50%;
+  }
 }

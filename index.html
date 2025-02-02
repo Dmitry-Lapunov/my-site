@@ -3,192 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Фронтенд - разработчик Лапунов Дмитрий</title>
+    <title>Фронтенд-разработчик | Дмитрий Лапунов</title>
     <link rel="stylesheet" href="styles/style.css" />
   </head>
 
   <body>
     <header class="header">
-      <nav class="navigator">
+      <nav class="navigation">
         <ul>
-          <li>
-            <a href="#">Главная</a>
-          </li>
-          <li>
-            <a href="#about">Обо мне</a>
-          </li>
-          <li>
-            <a href="#mySkills">Ключевые навыки</a>
-          </li>
-          <li>
-            <a href="pages/second_page.html">Как создать сайт</a>
-          </li>
-          <li>
-            <a href="#portfolio">Портфолио</a>
-          </li>
-          <li>
-            <a href="#contact">Закать сайт</a>
-          </li>
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#skills">Навыки</a></li>
+          <li><a href="/pages/second_page.html">Как создать сайт</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#contact">Заказать сайт</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="main">
-      <section class="mainHeader">
+    <main class="content">
+      <section class="hero" id="home">
         <h1>Дмитрий Лапунов</h1>
-        <h2>Frontend-Разработчик</h2>
-        <img src="images/logo.jpeg" alt="logo" />
+        <p>Фронтенд-разработчик</p>
+        <img src="images/logo.jpeg" alt="Логотип Дмитрия Лапунова" />
       </section>
 
-      <section class="aboutMe" id="about">
-        <h3>Обо мне</h3>
-        <section class="myHistory">
+      <section class="about-me" id="about">
+        <h2>Обо мне</h2>
+        <div class="history">
           <div>
             <p>
-              Я много лет проработал в сфере недвижимости. Как и многие частные
-              агенты, я не хотел тратить лишние деньги на рекламщика. Поэтому я
-              прошёл обучение на интернет-маркетолога. Тут я понял, что нужно
-              ещё делать сайты. Причём не на обычном конструкторе, а писать
-              полноценные сайты. Я начал задумываться, почему такие большие
-              суммы за создание одного сайта. И решил научиться писать сайты
-              самостоятельно. Как оказалось, это невероятное количество знаний и
-              умений.
+              Много лет работая в сфере недвижимости, я не хотел переплачивать за услуги рекламных агентств. Это побудило меня пройти обучение на интернет-маркетолога. Тогда я осознал, что для успешного продвижения нужны качественные сайты, написанные вручную, а не созданные на конструкторах. Меня заинтересовало, почему разработка сайтов стоит так дорого, и решил освоить эту профессию сам. Оказалось, что это требует большого количества знаний и навыков.
             </p>
           </div>
           <div>
             <p>
-              Сейчас каждому бизнесу, даже самому маленькому, нужен хороший
-              современный сайт, который отвечает всем требованиям
-              SEO-оптимизации, Адаптивности и Релевантности.
-              <strong
-                >И поверьте, всё не так просто, как говорят вам ваши
-                маркетологи.</strong
-              ><br />
-              Есть разные варианты создания сайтов, они все отличаются ценой,
-              скоростью, сложностью создания. И многие думают, что дешёвый и
-              простой лендинг, собранный на бесплатном конструкторе, обеспечит
-              им большой поток клиентов. Однако это совершенно наоборот.
+              Сегодня любому бизнесу необходим качественный и современный сайт, соответствующий требованиям SEO, адаптивный и релевантный.Поверьте, это далеко не так просто, как может показаться на первый взгляд. Существует множество способов создания сайтов, отличающихся по цене, скорости и сложности разработки. Многие ошибочно полагают, что дешевый лендинг, созданный на бесплатном конструкторе, привлечёт большое количество клиентов. На самом деле, всё совсем иначе. Почему? <a href="pages/second_page.html">сморите сами!</a>
             </p>
           </div>
-        </section>
+        </div>
       </section>
 
-      <section class="mySkills" id="mySkills">
-        <h3>Мои навыки</h3>
-        <section class="byMe">
-          <div>
-            <p>
-              <strong
-                >Сейчас я уже полностью овладел всеми основами
-                Фронтенд-разработки. Умею писать различные сайты. И готов
-                разработать полноценный сайт под ваш заказ.</strong
-              >
-            </p>
-          </div>
-        </section>
-        <section class="skills">
-          <article>
-            <h4>Чем я уже обладаю:</h4>
-          </article>
-          <div>
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript</li>
-              <li>Git</li>
-              <li>Продвенутая верстка</li>
-              <li>Node.js</li>
-            </ul>
-          </div>
-        </section>
-        <button>Закать сайт</button>
+      <section class="skills" id="skills">
+        <h2>Мои навыки</h2>
+        <div class="skill-list">
+          <p>
+            В настоящее время я продолжаю учиться на Фронтенд-разработчика , но уже полностью освоил основы фронтенд-разработки и умею создавать разнообразные веб-сайты. <p>Готов разработать сайт любой сложности под ваш запрос.</p>
+          </p>
+        </div>
+        <div class="technologies">
+          <h3>Технологии, которыми я владею:</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+            <li>Продвинутая верстка</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+        <button for="#contact">Заказать сайт</button>
       </section>
 
       <section class="portfolio" id="portfolio">
-        <h3>Примеры моих работ</h3>
-        <p>
-          <strong>Ниже вы можете ознакомиться с примерами моих работ</strong>
-        </p>
-        <div>
-          <table class="myWork">
-            <tr>
-              <td>
-                <p>Мой сайт</p>
-                <img src="images/my-site.png" alt="example" /><br />
-                <a href="#">Ссылка на сайт</a>
-              </td>
-              <td>
-                <p>Мой сайт</p>
-                <img src="images/my-site.png" alt="example" /><br />
-                <a href="#">Ссылка на сайт</a>
-              </td>
-              <td>
-                <p>Мой сайт</p>
-                <img src="images/my-site.png" alt="example" /><br />
-                <a href="#">Ссылка на сайт</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>Мой сайт</p>
-                <img src="images/my-site.png" alt="example" /><br />
-                <a href="#">Ссылка на сайт</a>
-              </td>
-              <td>
-                <p>Мой сайт</p>
-                <img src="images/my-site.png" alt="example" /><br />
-                <a href="#">Ссылка на сайт</a>
-              </td>
-              <td>
-                <p>Мой сайт</p>
-                <img src="images/my-site.png" alt="example" /><br />
-                <a href="#">Ссылка на сайт</a>
-              </td>
-            </tr>
-          </table>
+        <div><h2>Примеры моих работ</h2></div>
+        <div><h3>Ознакомьтесь с некоторыми моими проектами ниже.</h3></div>
+        <div class="projects">
+          <div class="project">
+            <p class="project-title">Мой сайт</p>
+            <p>Здесь реализованы мои основные навыки. Написан сайт с нуля. Применыны стили, настроена адаптиная верстка. Написан backend для сбора заявок и перенаправления на почту для получения.</p>
+            <img src="images/my-site.png" alt="Пример работы" />
+            <a href="#">Посмотреть сайт</a>
+          </div>
+          <div class="project">
+            <p class="project-title">Агентво недвижимости</p>
+            <p>Написан сайт с нуля. Применыны стили, настроена адаптиная верстка. Написаны различные скрипты, например для фильтрации объектов. Написан backend для сбора заявок и отправки на почту.</p>
+            <img src="images/chestnayasdelka.png" alt="Пример работы" />
+            <a href="https://chestnayasdelka.ru/">Посмотреть сайт</a>
+          </div>
+          <div class="project">
+            <p class="project-title">Магазин премиального авто</p>
+            <p>Написан сайт с нуля. Применыны стили, настроена адаптиная верстка. Написаны различные скрипты, например для фильтрации автомобилей. Подключен готовый backend для сбора заявок.</p>
+            <img src="images/luxury_car.png" alt="Пример работы" />
+            <a href="https://dmitry-lapunov.github.io/cars/">Посмотреть сайт</a>
+          </div>
         </div>
-
-        <button>Закать сайт</button>
+        <button for="#contact">Заказать сайт</button>
       </section>
 
       <section class="contact" id="contact">
-        <h3>Оставить заявку на разработку</h3>
+        <h2>Оставьте заявку на разработку</h2>
         <form>
-          <input type="text" placeholder="Ваше имя" />
-          <input type="text" placeholder="Ваша фамилия" />
-          <input type="email" placeholder="Ваша почта@example.com" />
-          <input type="tel" placeholder="+7999999999" />
-          <button>Закать сайт</button>
+          <label for="name">Имя:</label>
+          <input type="text" id="name" placeholder="Ваше имя" required />
+          <label for="surname">Фамилия:</label>
+          <input type="text" id="surname" placeholder="Ваша фамилия" required />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Ваша почта@example.com"
+            required
+          />
+          <label for="phone">Телефон:</label>
+          <input
+            type="tel"
+            id="phone"
+            placeholder="+7 (999) 999-99-99"
+            pattern="\+?[78][-(]?\d{3}[)-]?\d{3}[-\s]?\d{2}[-\s]?\d{2}"
+            required
+          />
+          <button>Заказать сайт</button>
         </form>
       </section>
     </main>
 
     <footer class="footer">
-      <nav class="navigator">
+      <nav class="navigation">
         <ul>
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#skills">Навыки</a></li>
+          <li><a href="/pages/second_page.html">Как создать сайт</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#contact">Заказать сайт</a></li>
           <li>
-            <a href="#">Главная</a>
+            <a href="#"><i class="fa-brands fa-telegram"></i> Telegram</a>
           </li>
           <li>
-            <a href="#about">Обо мне</a>
-          </li>
-          <li>
-            <a href="#skills">Ключевые навыки</a>
-          </li>
-          <li>
-            <a href="#variants">Как создать сайт</a>
-          </li>
-          <li>
-            <a href="#portfolio">Портфолио</a>
-          </li>
-          <li>
-            <a href="#contact">Закать сайт</a>
-          </li>
-          <li>
-            <a href="#"><i class="myNetworks"></i>Telegram</a>
-          </li>
-          <li>
-            <a href="#"><i class="myNetworks"></i> GitHub</a>
+            <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
           </li>
         </ul>
         <p>© 2025 Дмитрий Лапунов. Все права защищены.</p>
